@@ -9,4 +9,4 @@ let classe = {
 };
 
 
-classe.afficherEtudiants();
+classe.afficherEtudiants

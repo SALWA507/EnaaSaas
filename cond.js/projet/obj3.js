@@ -4,6 +4,13 @@ let livres = [
     { titre: "1948", auteur: "george", annee: "1949" }
 ];
 
-for (let i = 0; i < livres.length; i++) {
-    console.log(livres[i].titre);
+for(i = 0; i<=livres[i].linght;i++ ) {
+console.log(livres[i].titre);
+}
+
+function trouverLivre(titre){
+
+
+
+
 }
