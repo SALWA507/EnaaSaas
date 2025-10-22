@@ -1,3 +1,6 @@
+const prompt = require("prompt-sync")();
+
+
 let taches = [
 {  id : 1, titre :"aller au marcher",terminee : false },
 {id : 2, titre :"faire les devoir",terminee : false },
