@@ -14,10 +14,18 @@ function introdu() {
 
 function ajouter() {
     const numero = parseInt(prompt("entrer le numero de livres a ajouter : "));
-    for ( let i = 0; i < livres.length; i++ ) {
-        console.log("numero de livre ( i+1 )");
+    for ( let i = 0; i < numero; i++ ) {
+       
 
-    }
+    const ntitre = prompt("entrerz le titre du livre");
+    const nannée = parseInt(prompt("entrez lannée de publication : "));
+
+    livres.push({ id: livres.length + 1, titre: ntitre, année: nannée, statut: false });
+    console.log(livres);
+        console.log("numero de livre ( i+1 )")       
+
+
+}
 }
  
 function afficher() {
@@ -84,20 +92,18 @@ function LivresDisponibles() {
 }
 }
 function rechercheid(){
-const id  = prompt("entrerz id du livre");
+const idn  = Number(prompt("entrerz id du livre"));
 for (let i = 0; i < livres.length; i++) {
-if(livres.id[i] === id ){
+if(livres[i].id === idn ){
+
 console.log("id : " + livres[i].id +  " : Titre: " + livres[i].titre + " : Année: " + livres[i].année)
-
 }
-
-}
-}
+}}
 
 
 function afficherMenu() {
   let choix = "";
-  while(choix!== 7) {
+  while(choix!== "8") {
 
 
 console.log("=== Menu de la bibliothéque ===");
@@ -107,8 +113,8 @@ console.log("3.function afficher : ");
 console.log("4.function trier : ");
 console.log("5. function trierAnnee : ");
 console.log("6.function LivresDisponibles : ");
-console.log("7.function rechercheid :  ")
-
+console.log("7.function rechercheid :  ");
+console.log("8.Quiter : ")
 
 choix = prompt("enter un choix : ");
 
@@ -139,7 +145,9 @@ switch (choix) {
     case"7":
         rechercheid();
         break
-
+    case "8":
+        console.log(" fin de programme.");
+        break;
 }
 }
 }
